@@ -112,6 +112,7 @@
     <li><a href="{{route('nissans.index')}}" class="list-group-item">Nissan</a></li>
     <li><a href="{{route('bmws.index')}}" class="list-group-item">BMW</a></li>
     <li><a href="{{route('hondas.index')}}" class="list-group-item">Honda</a></li>
+    <li><a href="{{route('produtos.index')}}" class="list-group-item">Produtos</a></li>
   </ul>
 </div>
 

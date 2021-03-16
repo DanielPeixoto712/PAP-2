@@ -43,11 +43,11 @@
 
         
         <div align="center">
-        <a href="{{route('bmws.create')}}"><button type="button" class="btn btn-outline-primary">Criar</button></a>
+        <a href="{{route('produtos.create')}}"><button type="button" class="btn btn-outline-primary">Criar</button></a>
 </div><br>
         <div class="row">
 
-         @foreach($bmws as $bmw)
+         @foreach($produtos as $produto)
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
               <a href="#"><img class="card-img-top" src="img/logo.png" alt=""></a>
@@ -55,19 +55,30 @@
                 <h4 class="card-title">
 
 
-                  <a href="{{route('bmws.show', ['id'=>$bmw->id_bmw])}} "class="list-group-item"  >{{$bmw->motor}}</a>
+                  <a href="{{route('produtos.show', ['id'=>$produto->id_produto])}} "class="list-group-item"  >{{$produto->id_motor}}</a>
                 </h4>
-                <h5>{{$bmw->preco}} €</h5>
-                <p class="card-text">{{$bmw->info}}</p>
+                <h5>{{$produto->preco}} €</h5>
+                <p class="card-text">{{$produto->info}}</p>
               </div>
               <div class="card-footer">
                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
               </div>
             </div>
-            <a href="{{route('bmws.edit', ['id'=>$bmw->id_bmw])}}">Editar</a>
           </div>
 
 @endforeach
+
+
+         @foreach($produtos as $produto)
+      @if({{$produto->marca}}=2)
+<a href="{{route('produtos.show', ['id'=>$produto->id_produto])}} "class="list-group-item"  >{{$produto->marca}}</a>
+
+  @endif
+                  
+                
+@endforeach
+
+
 
 
 

@@ -55,7 +55,9 @@ Route::get('/bmws/{id}/show', 'App\Http\Controllers\BmwsController@show')->name(
 //Create
 Route::get('/bmws/create', 'App\Http\Controllers\BmwsController@create')->name('bmws.create');
 Route::post('/bmws', 'App\Http\Controllers\BmwsController@store')->name('bmws.store');
-
+//edit
+Route::get('/bmws/{id}/edit','App\Http\Controllers\BmwsController@edit')->name('bmws.edit');
+Route::post('/bmws', 'App\Http\Controllers\BmwsController@update')->name('bmws.update');
 
 
 
@@ -107,3 +109,9 @@ Route::get('/bomps/{id}/show', 'App\Http\Controllers\BompsController@show')->nam
 //Create
 Route::get('/bomps/create', 'App\Http\Controllers\BompsController@create')->name('bomps.create');
 Route::post('/bomps', 'App\Http\Controllers\BompsController@store')->name('bomps.store');
+
+//produto
+Route::get('/produtos', 'App\Http\Controllers\ProdutosController@index')->name('produtos.index');
+Route::get('/produtos/{id}/show', 'App\Http\Controllers\ProdutosController@show')->name('produtos.show');
+Route::get('/produtos/create', 'App\Http\Controllers\ProdutosController@create')->name('produtos.create');
+Route::post('/produtos', 'App\Http\Controllers\ProdutosController@store')->name('produtos.store');

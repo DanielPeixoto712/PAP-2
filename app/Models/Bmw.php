@@ -11,7 +11,13 @@ class Bmw extends Model
     protected $primaryKey="id_bmw";
     protected $table="bmw";
 
-    
+       protected $fillable=[
+       'motor',
+       'preco',
+       'observacoes',
+       'info',
+       'imagem_capa'
+   ];
    
     }
    

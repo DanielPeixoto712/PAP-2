@@ -20,6 +20,7 @@
 
 
 
+
          
 
 
@@ -30,10 +31,10 @@
 <div class="col-lg-9">
 
         <div class="card mt-4">
-          <img class="card-img-top img-fluid" src="{{asset('imagens/Bmw/'.$bmw->imagem_capa)}}" >
+          <img class="card-img-top img-fluid" src="{{asset('img/1jz.jpg')}}" alt="">
           <div class="card-body">
             <h3 class="card-title"></h3>
-            <h5>{{$bmw->preco}}€</h5>
+            <h5>{{$produto->preco}} €</h5>
             <p class="card-text">TLorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
             <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
             4.0 stars
