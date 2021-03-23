@@ -47,7 +47,10 @@
 </div><br>
         <div class="row">
 
+          
          @foreach($produtos as $produto)
+
+
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
               <a href="#"><img class="card-img-top" src="img/logo.png" alt=""></a>
@@ -55,8 +58,10 @@
                 <h4 class="card-title">
 
 
-                  <a href="{{route('produtos.show', ['id'=>$produto->id_produto])}} "class="list-group-item"  >{{$produto->id_motor}}</a>
+                  <a href="{{route('produtos.show', ['id'=>$produto->id_produto])}} "class="list-group-item"  >{{$produto->produto}}</a>
                 </h4>
+                <h5>{{$produto->marca->marca}}</h5>
+                <h5>{{$produto->categoria->designacao}}</h5>
                 <h5>{{$produto->preco}} €</h5>
                 <p class="card-text">{{$produto->info}}</p>
               </div>
@@ -66,18 +71,12 @@
             </div>
           </div>
 
+
 @endforeach
 
 
-         @foreach($produtos as $produto)
-      @if({{$produto->marca}}=2)
-<a href="{{route('produtos.show', ['id'=>$produto->id_produto])}} "class="list-group-item"  >{{$produto->marca}}</a>
 
-  @endif
-                  
-                
-@endforeach
-
+ 
 
 
 

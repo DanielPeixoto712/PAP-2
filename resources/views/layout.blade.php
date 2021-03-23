@@ -109,9 +109,10 @@
   <button class="btn btn btn-outline-primary" type="button" data-toggle="dropdown">Motores
   <span class="caret"></span></button>
   <ul class="dropdown-menu">
-    <li><a href="{{route('nissans.index')}}" class="list-group-item">Nissan</a></li>
-    <li><a href="{{route('bmws.index')}}" class="list-group-item">BMW</a></li>
-    <li><a href="{{route('hondas.index')}}" class="list-group-item">Honda</a></li>
+
+    <li><a href="" class="list-group-item">nissan</a></li>
+    <li><a href="" class="list-group-item">BMW</a></li>
+    <li><a href="" class="list-group-item">Honda</a></li>
     <li><a href="{{route('produtos.index')}}" class="list-group-item">Produtos</a></li>
   </ul>
 </div>
@@ -123,8 +124,8 @@
   <button class="btn btn btn-outline-primary" type="button" data-toggle="dropdown">Suspensões
   <span class="caret"></span></button>
   <ul class="dropdown-menu">
-    <li><a href="{{route('yellows.index')}}" class="list-group-item">Yellow Speed Racing</a></li>
-    <li><a href="{{route('aps.index')}}" class="list-group-item">AP</a></li>
+    <li><a href="" class="list-group-item">Yellow Speed Racing</a></li>
+    <li><a href="" class="list-group-item">AP</a></li>
   </ul>
 </div>
 
@@ -134,8 +135,8 @@
   <button class="btn btn btn-outline-primary" type="button" data-toggle="dropdown">Volantes
   <span class="caret"></span></button>
   <ul class="dropdown-menu">
-    <li><a href="{{route('omps.index')}}" class="list-group-item">OMP</a></li>
-    <li><a href="{{route('sparcos.index')}}" class="list-group-item">Sparco</a></li>
+    <li><a href="" class="list-group-item">OMP</a></li>
+    <li><a href="" class="list-group-item">Sparco</a></li>
   </ul>
 </div>
 
@@ -147,36 +148,12 @@
   <button class="btn btn btn-outline-primary" type="button" data-toggle="dropdown">Backets
   <span class="caret"></span></button>
   <ul class="dropdown-menu">
-    <a href="{{route('bomps.index')}}" class="list-group-item">OMP</a>
+    <a href="" class="list-group-item">OMP</a>
     
   </ul>
 </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    
 
 
           

@@ -14,6 +14,9 @@ class IndexController extends Controller
      */
     public function index()
     {
-        return view('index');
+    	$marca = Marca::all();
+         return view('index', ['marcas'=>$marca
+   ]);
     }
 }
+

@@ -50,7 +50,7 @@
   <div class="card-body">
     <h5 class="card-title">Temos vários volantes!</h5>
     <p class="card-text">Para todos os gostos!</p>
-    <a href="{{route('omps.index')}}" target="blank" class="btn btn-primary">Visitar</a>
+    <a href="" target="blank" class="btn btn-primary">Visitar</a>
   </div>
 </div>
 </div>
@@ -73,12 +73,11 @@
   <div class="card-body">
     <h5 class="card-title">Aqui encontra o motor que procura!</h5>
     <p class="card-text">Procure aqui!</p>
-    <a href="{{route('bmws.index')}}" target="blank" class="btn btn-primary">Visitar</a>
+    <a href="" target="blank" class="btn btn-primary">Visitar</a>
   </div>
 </div>
 </div>
 </div> 
-
 
 
           
@@ -97,3 +96,5 @@
 
 @section ('rodape')
 @endsection
+
+
